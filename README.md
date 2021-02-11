@@ -30,7 +30,6 @@ step 4 postprocess to remove False predict
 --
 ``python data_prepare/python preprocess.py``
 # baseline
-
 | Method     |U-Net  |Att U-Net|sep U-Net |denseunet  |
 | :----------:|:----:| :-----:|:-------:|:--------:|
 | `Dice(liver)`|0.951|0.950  |0.948    | 0.949    |
