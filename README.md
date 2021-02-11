@@ -1,6 +1,6 @@
 **2d segmentation for LiTS2017** (the challenge website in [codalab](https://competitions.codalab.org/competitions/17094))
 --
-**data**:[GoogleDrive](https://drive.google.com/drive/folders/1V6X3CwnHMoVyuArASiNgoOcC5N4oNpLA?usp=sharing)
+**data**:[GoogleDrive](https://drive.google.com/drive/folders/1V6X3CwnHMoVyuArASiNgoOcC5N4oNpLA?usp=sharing)[百度云](https://pan.baidu.com/s/1leTOp_HWoZZ3YKnRlRQa-w)(7itj)
 # How to use it 
 step 1 data process
 -   
