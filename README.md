@@ -31,19 +31,18 @@ step 4 postprocess to remove False predict
 ``python data_prepare/python preprocess.py``
 # baseline
 
-| Method     |U-Net  |R2U-Net|Att U-Net|Att R2U-Net |
+| Method     |U-Net  |Att U-Net|sep U-Net |denseunet  |
 | :----------:|:----:| :-----:|:-------:|:--------:|
-| `Dice(liver)`|0.951|0.953  |0.953    |0.953    |
-| `rvd`        |0.016|0.016  |0.016    |0.016    |
-| `jaccard`    |0.911|0.911  |0.911    |0.911    |
-| `Dice(tumor)`|0.613|0.623  |0.623    |0.623    |
-| `rvd`        |-0.076| -0.076|-0.076   |-0.076   |
-| `jaccard`    |0.634|0.634  |0.634    |0.634    |
+| `Dice(liver)`|0.951|0.950  |0.948    | 0.949    |
+| `rvd`        |0.016|0.038  |0.037    |0.029 |
+| `jaccard`    |0.911|0.906  |0.903    |0.904    |
+| `Dice(tumor)`|0.613|0.609  |0.594    |0.600    |
+| `rvd`        |-0.076| -0.067|-0.096   |-0.119   |
+| `jaccard`    |0.634|0.621  |0.604    |0.614    |
 
 the code is built on [Image_Segmentation](https://github.com/LeeJunHyun/Image_Segmentation/blob/master/network.py)
 
 # Later work
 - [ ] data augmentation
-- [ ] only segment tumor 
 - [ ] postprocessing
 - [ ] 3d segmentation
