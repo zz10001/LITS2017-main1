@@ -6,8 +6,8 @@ import numpy as np
 from scipy.ndimage import label
 
 
-indir = "../pred_result/pred_test2017_tta"
-outdir = "12_25tta"
+indir = "../pred_result/pred_test2017"
+outdir = "pred_test2017"
 def export_segmentations_postprocess(indir, outdir):
     maybe_mkdir_p(outdir)
     niftis = subfiles(indir, suffix='nii.gz', join=False)

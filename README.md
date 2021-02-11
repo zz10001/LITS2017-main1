@@ -28,7 +28,7 @@ step 3 Test the model
 
 step 4 postprocess to remove False predict
 --
-``python data_prepare/python preprocess.py``
+``python data_prepare/postprocess.py``
 # baseline
 | Method     |U-Net  |Att U-Net|sep U-Net |denseunet  |
 | :----------:|:----:| :-----:|:-------:|:--------:|
