@@ -284,6 +284,7 @@ def main():
     ])
 
     best_loss = 100
+    best_iou = 0
     trigger = 0
     first_time = time.time()
     for epoch in range(args.epochs):
@@ -320,9 +321,9 @@ def main():
 
         trigger += 1
 
-        if val_log['loss'] < best_loss:
+        if val_log['iou'] > best_iou:
             torch.save(model.state_dict(), 'models/{}/{}/epoch{}-{:.4f}-{:.4f}_model.pth'.format(args.name,timestamp,epoch,val_log['dice_1'],val_log['dice_2']))
-            best_loss = val_log['loss']
+            best_iou = val_log['iou']
             print("=> saved best model")
             trigger = 0
 
