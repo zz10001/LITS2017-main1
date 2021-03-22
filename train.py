@@ -250,8 +250,6 @@ def main():
     print("=> creating model %s" %args.arch)
     model = Unet.U_Net(args)
     model = torch.nn.DataParallel(model).cuda()
-    # checkpoints 重新训练
-    # model.load_state_dict(torch.load('models/LiTS_UNet_3Plus_lym/2020-12-21-12-43-51/epoch183-0.9742-0.8959_model.pth'))
 
     print(count_params(model))
 
