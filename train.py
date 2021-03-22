@@ -76,7 +76,7 @@ def parse_args():
                         metavar='N', help='early stopping (default: 30)')
     
     #换模型需要修改的地方
-    parser.add_argument('-b', '--batch-size', default=16, type=int,
+    parser.add_argument('-b', '--batch-size', default=20, type=int,
                         metavar='N', help='mini-batch size (default: 16)')
     parser.add_argument('--optimizer', default='Adam',
                         choices=['Adam', 'SGD'],
@@ -248,7 +248,7 @@ def main():
     # create model
     #换模型需要修改的地方
     print("=> creating model %s" %args.arch)
-    model = sepnet.U_Net(args)
+    model = Unet.U_Net(args)
     model = torch.nn.DataParallel(model).cuda()
     # checkpoints 重新训练
     # model.load_state_dict(torch.load('models/LiTS_UNet_3Plus_lym/2020-12-21-12-43-51/epoch183-0.9742-0.8959_model.pth'))
