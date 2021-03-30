@@ -37,7 +37,7 @@ import pandas as pd
 from net import Unet,res_unet_plus,R2Unet,sepnet
 
 #换模型需要修改的地方
-arch_names = list(sepnet.__dict__.keys())
+arch_names = list(Unet.__dict__.keys())
 loss_names = list(losses.__dict__.keys())
 loss_names.append('BCEWithLogitsLoss')
 
@@ -49,7 +49,7 @@ def parse_args():
                         help='model name: (default: arch+timestamp)')
     
     #换模型需要修改的地方
-    parser.add_argument('--arch', '-a', metavar='ARCH', default='Sep_Unet',
+    parser.add_argument('--arch', '-a', metavar='ARCH', default='Unet',
                         choices=arch_names,
                         help='model architecture: ' +
                             ' | '.join(arch_names) +
