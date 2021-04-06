@@ -59,6 +59,6 @@ the code is built on [Image_Segmentation](https://github.com/LeeJunHyun/Image_Se
 **2d model for segmentation**
 [LiTS-Liver-Tumor-Segmentaton-Challenge](https://github.com/ChoiDM/LiTS-Liver-Tumor-Segmentaton-Challenge)  
 [unet-lits-2d-pipeline](https://github.com/Confusezius/unet-lits-2d-pipeline)  
-[https://github.com/LTYUnique/DS-SFFNet](https://github.com/LTYUnique/DS-SFFNet)  
+[DS-SFFNet](https://github.com/LTYUnique/DS-SFFNet)  
 
 
