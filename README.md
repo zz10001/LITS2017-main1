@@ -55,6 +55,7 @@ the code is built on [Image_Segmentation](https://github.com/LeeJunHyun/Image_Se
 [RAUNet-tumor-segmentation](https://github.com/RanSuLab/RAUNet-tumor-segmentation)  
 [LiTS---Liver-Tumor-Segmentation-Challenge](https://github.com/junqiangchen/LiTS---Liver-Tumor-Segmentation-Challenge)  
 [H-DenseUNet](https://github.com/xmengli999/H-DenseUNet)  
+[DoDNet](https://github.com/jianpengz/DoDNet)
 
 **2d model for segmentation**  
 [LiTS-Liver-Tumor-Segmentaton-Challenge](https://github.com/ChoiDM/LiTS-Liver-Tumor-Segmentaton-Challenge)  
