@@ -50,15 +50,15 @@ the code is built on [Image_Segmentation](https://github.com/LeeJunHyun/Image_Se
 
 # Some others Related Work on Liver tumor segmentation
 **3d model for segmentation**
-[3DUNet-Pytorch](https://github.com/lee-zq/3DUNet-Pytorch)
-[MICCAI-LITS2017](https://github.com/assassint2017/MICCAI-LITS2017)
-[RAUNet-tumor-segmentation](https://github.com/RanSuLab/RAUNet-tumor-segmentation)
-[LiTS---Liver-Tumor-Segmentation-Challenge](https://github.com/junqiangchen/LiTS---Liver-Tumor-Segmentation-Challenge)
-[H-DenseUNet](https://github.com/xmengli999/H-DenseUNet)
+[3DUNet-Pytorch](https://github.com/lee-zq/3DUNet-Pytorch)  
+[MICCAI-LITS2017](https://github.com/assassint2017/MICCAI-LITS2017)  
+[RAUNet-tumor-segmentation](https://github.com/RanSuLab/RAUNet-tumor-segmentation)  
+[LiTS---Liver-Tumor-Segmentation-Challenge](https://github.com/junqiangchen/LiTS---Liver-Tumor-Segmentation-Challenge)  
+[H-DenseUNet](https://github.com/xmengli999/H-DenseUNet)  
 
 **2d model for segmentation**
-[LiTS-Liver-Tumor-Segmentaton-Challenge](https://github.com/ChoiDM/LiTS-Liver-Tumor-Segmentaton-Challenge)
-[unet-lits-2d-pipeline](https://github.com/Confusezius/unet-lits-2d-pipeline)
-[https://github.com/LTYUnique/DS-SFFNet](https://github.com/LTYUnique/DS-SFFNet)
+[LiTS-Liver-Tumor-Segmentaton-Challenge](https://github.com/ChoiDM/LiTS-Liver-Tumor-Segmentaton-Challenge)  
+[unet-lits-2d-pipeline](https://github.com/Confusezius/unet-lits-2d-pipeline)  
+[https://github.com/LTYUnique/DS-SFFNet](https://github.com/LTYUnique/DS-SFFNet)  
 
 
