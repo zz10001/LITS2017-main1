@@ -46,7 +46,7 @@ the code is built on [Image_Segmentation](https://github.com/LeeJunHyun/Image_Se
 # Later work
 - [ ] data augmentation
 - [ ] postprocessing
-- [ ] 3d segmentation
+- [x] 3d segmentation
 
 # Some others Related Work on Liver tumor segmentation
 **3d model for segmentation**  
