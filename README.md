@@ -26,6 +26,7 @@ step 2 Train the model
 
 step 3 Test the model 
 --
+you can download the models and ROI liver mask from [This](https://pan.baidu.com/s/1nzD9Xeyn9JYJ141aJphWag)(syzv) and put them in suitable place according to test.py
 ``python test.py``
 
 step 4 postprocess to remove False predict
