@@ -98,5 +98,4 @@ if __name__ == "__main__":
                 np.save(maskpath, maskImg)  # (448，448) dtype('uint8') 值为0 1 2
         else:
             continue
-        
     print("Done！")
