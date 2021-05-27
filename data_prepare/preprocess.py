@@ -69,8 +69,12 @@ if __name__ == "__main__":
         z = np.any(mask_array, axis=(1, 2))
         start_slice, end_slice = np.where(z)[0][[0, -1]]
 
-        ct_crop = ct_array[start_slice-1:end_slice + 2, :, :]
-        mask_crop = mask_array[start_slice:end_slice + 1, :, :]
+        print('cs',start_slice,end_slice,file)
+        start_slice = max(0, start_slice - 1)
+        end_slice = min(mask_array.shape[0] - 1, end_slice + 2)
+
+        ct_crop = ct_array[start_slice:end_slice, :, :]
+        mask_crop = mask_array[start_slice+1:end_slice-1, :, :]
 
         #裁剪(偶数才行) 448*448
         ct_crop = ct_crop[:,32:480,32:480]
@@ -79,16 +83,20 @@ if __name__ == "__main__":
         print('ct_crop.shape',ct_crop.shape)
 
         # 切片处理,并去掉没有病灶的切片
-        for n_slice in range(mask_crop.shape[0]):
-            maskImg = mask_crop[n_slice, :, :]
-            ctImageArray = np.zeros((ct_crop.shape[1], ct_crop.shape[2], 3), np.float)
-            ctImageArray[:, :, 0] = ct_crop[n_slice , :, :]
-            ctImageArray[:, :, 1] = ct_crop[n_slice + 1, :, :]
-            ctImageArray[:, :, 2] = ct_crop[n_slice + 2, :, :]
+        if int(np.sum(mask_crop))!=0:
+            for n_slice in range(mask_crop.shape[0]):
+                maskImg = mask_crop[n_slice, :, :]
+                ctImageArray = np.zeros((ct_crop.shape[1], ct_crop.shape[2], 3), np.float)
+                ctImageArray[:, :, 0] = ct_crop[n_slice , :, :]
+                ctImageArray[:, :, 1] = ct_crop[n_slice + 1, :, :]
+                ctImageArray[:, :, 2] = ct_crop[n_slice + 2, :, :]
 
-            imagepath = outputImg_path + "/" + str(index+1) + "_" + str(n_slice) + ".npy"
-            maskpath = outputMask_path + "/" + str(index+1) + "_" + str(n_slice) + ".npy"
-                
-            np.save(imagepath, ctImageArray)  # (448，448,3) np.float dtype('float64')
-            np.save(maskpath, maskImg)  # (448，448) dtype('uint8') 值为0 1 2
+                imagepath = outputImg_path + "/" + str(index+1) + "_" + str(n_slice) + ".npy"
+                maskpath = outputMask_path + "/" + str(index+1) + "_" + str(n_slice) + ".npy"
+                    
+                np.save(imagepath, ctImageArray)  # (448，448,3) np.float dtype('float64')
+                np.save(maskpath, maskImg)  # (448，448) dtype('uint8') 值为0 1 2
+        else:
+            continue
+        
     print("Done！")
