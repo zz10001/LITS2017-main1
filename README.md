@@ -46,7 +46,7 @@ the code is built on [Image_Segmentation](https://github.com/LeeJunHyun/Image_Se
 
 # Later work
 - [ ] data augmentation
-- [ ] postprocessing
+- [x] postprocessing (just according to some tips on NNunet,if you want to do some others like CRF,you can make it by yourself on [pydensecrf](https://github.com/lucasb-eyer/pydensecrf))
 - [x] 3d segmentation
 
 # Some others Related Work on Liver tumor segmentation
@@ -62,6 +62,7 @@ the code is built on [Image_Segmentation](https://github.com/LeeJunHyun/Image_Se
 
 **2d model for segmentation**  
 [LiTS-Liver-Tumor-Segmentaton-Challenge](https://github.com/ChoiDM/LiTS-Liver-Tumor-Segmentaton-Challenge)  
+[ISBI-2020-LITS_Hybrid_Comp_Net](https://github.com/raun1/ISBI-2020-LITS_Hybrid_Comp_Net)  
 [unet-lits-2d-pipeline](https://github.com/Confusezius/unet-lits-2d-pipeline)  
 [DS-SFFNet](https://github.com/LTYUnique/DS-SFFNet)  
 [u_net_liver](https://github.com/JavisPeng/u_net_liver)
