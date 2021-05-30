@@ -68,4 +68,3 @@ the code is built on [Image_Segmentation](https://github.com/LeeJunHyun/Image_Se
 [u_net_liver](https://github.com/JavisPeng/u_net_liver)
 
 
-
