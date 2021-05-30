@@ -46,7 +46,7 @@ the code is built on [Image_Segmentation](https://github.com/LeeJunHyun/Image_Se
 
 # Later work
 - [ ] data augmentation
-- [x] postprocessing (just according to some tips on NNunet,if you want to do some others like CRF,you can make it by yourself on [pydensecrf](https://github.com/lucasb-eyer/pydensecrf))
+- [x] postprocessing (Just according to some tips on nnUnet,if you want to do some others like CRF,you can make it by yourself on [pydensecrf](https://github.com/lucasb-eyer/pydensecrf))
 - [x] 3d segmentation
 
 # Some others Related Work on Liver tumor segmentation
