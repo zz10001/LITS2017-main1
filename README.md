@@ -31,7 +31,7 @@ you can download the models and ROI liver mask from [This](https://pan.baidu.com
 
 step 4 postprocess to remove False predict
 --
-``python data_prepare/postprocess.py``
+``python postprocess.py``
 # baseline
 | Method     |U-Net  |Att U-Net|sep U-Net |denseunet  |
 | :----------:|:----:| :-----:|:-------:|:--------:|
