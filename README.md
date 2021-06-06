@@ -1,4 +1,4 @@
-**2d segmentation for LiTS2017** (the challenge website in [codalab](https://competitions.codalab.org/competitions/17094))
+**2d segmentation for LITS2017** (the challenge website in [codalab](https://competitions.codalab.org/competitions/17094))
 --
 **data**:  
 [GoogleDrive](https://drive.google.com/drive/folders/1V6X3CwnHMoVyuArASiNgoOcC5N4oNpLA?usp=sharing)  
