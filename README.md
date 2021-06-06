@@ -6,7 +6,7 @@
 # How to use it 
 step 1 data process
 -   
-``python data_prepare/preprocess.py``
+``python preprocess.py``
 
 you can get the data like this,each npy file shape is ``448*448*3``,use each slice below and above as input image,the mid slice as mask(``448*448``)
 ```
